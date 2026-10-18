@@ -1,0 +1,30 @@
+[
+  {
+    "id": "R01",
+    "name": "Never put A and B together",
+    "type": "separation",
+    "enabled": true,
+    "params": { "group_by": "pair_id", "scope": "CIOC" }
+  },
+  {
+    "id": "R02",
+    "name": "Keep each cable together",
+    "type": "grouping",
+    "enabled": true,
+    "params": { "group_by": "cable_id", "scope": "baseplate" }
+  },
+  {
+    "id": "R03",
+    "name": "Spare per cabinet: 10%",
+    "type": "spare",
+    "enabled": true,
+    "params": { "percent": 10, "scope": "cabinet" }
+  },
+  {
+    "id": "R04",
+    "name": "CHARM capacity limit",
+    "type": "capacity",
+    "enabled": true,
+    "params": { "scope": "baseplate" }
+  }
+]

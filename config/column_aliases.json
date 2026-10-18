@@ -1,0 +1,34 @@
+{
+  "standard_fields": {
+    "tag": {
+      "required": true,
+      "aliases": ["tag", "tag no", "tag number", "tag name", "tagid", "tag id",
+                  "instrument tag", "signal tag", "signal name", "io tag", "point name"]
+    },
+    "description": {
+      "required": false,
+      "aliases": ["description", "desc", "service", "service description",
+                  "tag description", "signal description", "remarks"]
+    },
+    "signal_type": {
+      "required": true,
+      "aliases": ["signal type", "io type", "i/o type", "type", "signal", "io signal type",
+                  "charm type", "signal kind", "point type"]
+    },
+    "cable_id": {
+      "required": false,
+      "aliases": ["cable", "cable no", "cable number", "cable id", "cable tag",
+                  "multicore cable", "cable name"]
+    },
+    "ab_role": {
+      "required": false,
+      "aliases": ["ab", "a/b", "a b", "redundancy", "redundancy role", "duty standby",
+                  "role", "duty/standby"]
+    },
+    "pair_id": {
+      "required": false,
+      "aliases": ["pair", "pair id", "redundant pair", "redundancy pair",
+                  "pair tag", "partner group"]
+    }
+  }
+}

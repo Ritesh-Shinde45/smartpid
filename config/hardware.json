@@ -1,0 +1,6 @@
+{
+  "cioc_per_cabinet": 4,
+  "baseplates_per_cioc": 8,
+  "charms_per_baseplate": 12,
+  "max_cabinets": 50
+}

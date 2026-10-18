@@ -1,0 +1,11 @@
+{
+  "_note": "Replace/extend with the real CHARM list from the Emerson problem statement. Matching is word-based on normalised text; longest alias wins.",
+  "charm_types": {
+    "AI":  { "name": "AI CHARM",  "aliases": ["ai", "analog input", "analog in", "analogue input", "4 20ma", "4 20 ma", "hart ai", "hart input"] },
+    "AO":  { "name": "AO CHARM",  "aliases": ["ao", "analog output", "analog out", "analogue output", "hart ao", "hart output", "4 20ma output", "4 20ma out", "4 20 ma output"] },
+    "DI":  { "name": "DI CHARM",  "aliases": ["di", "digital input", "digital in", "discrete input", "dry contact", "24v di", "di 24v", "24vdc input", "24 vdc input"] },
+    "DO":  { "name": "DO CHARM",  "aliases": ["do", "digital output", "digital out", "discrete output", "24v do", "do 24v", "relay output", "24vdc output"] },
+    "RTD": { "name": "RTD CHARM", "aliases": ["rtd", "pt100", "pt 100", "resistance temperature"] },
+    "TC":  { "name": "TC CHARM",  "aliases": ["tc", "thermocouple", "t c"] }
+  }
+}
