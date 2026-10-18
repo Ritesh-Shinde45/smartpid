@@ -51,7 +51,6 @@ st.markdown(
 )
 st.caption(f"Active project: **{st.session_state['project_name']}**")
 
-# Pipeline status: each step turns green when its data exists in session state.
 steps = [
     ("1. Upload & map", st.session_state["signals_df"] is not None),
     ("2. Rules", bool(st.session_state["rules"])),
