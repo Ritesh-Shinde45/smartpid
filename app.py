@@ -10,14 +10,14 @@ from ui_components.session import (
 
 st.set_page_config(
     page_title="SmartPID - IO Signal Sudoku",
-    page_icon="🧩",
+    page_icon="S",
     layout="wide",
 )
 
 init_state()
 
 with st.sidebar:
-    st.title("🧩 SmartPID")
+    st.title("SmartPID")
     st.caption("DeltaV IO Signal Sudoku")
 
     projects = list_projects()
@@ -29,7 +29,7 @@ with st.sidebar:
             set_active_project(chosen)
             st.rerun()
 
-    with st.expander("➕ New project"):
+    with st.expander("New project"):
         new_name = st.text_input("Project name", key="new_project_name")
         if st.button("Create", use_container_width=True):
             if new_name.strip():
@@ -40,9 +40,9 @@ with st.sidebar:
 
     st.divider()
     if llm_available():
-        st.success("LLM assist: ON", icon="✅")
+        st.success("LLM assist: ON", icon="")
     else:
-        st.info("LLM assist: OFF (set ANTHROPIC_API_KEY in .env)", icon="ℹ️")
+        st.info("LLM assist: OFF (set ai key)", icon="ℹ")
 
 st.title("SmartPID - DeltaV IO Signal Sudoku")
 st.markdown(
@@ -64,7 +64,7 @@ steps = [
 cols = st.columns(len(steps))
 for col, (label, done) in zip(cols, steps):
     with col:
-        st.metric(label, "✅ Done" if done else "⏳ Pending")
+        st.metric(label, " Done" if done else " Pending")
 
 st.divider()
 
@@ -84,4 +84,4 @@ with right:
     viol = st.session_state["violations"]
     st.write(f"Rule violations: **{'-' if viol is None else len(viol)}**")
 
-st.info("Use the pages in the left sidebar to move through the steps.", icon="👈")
+st.info("Use the pages in the left sidebar to move through the steps.", icon="")
