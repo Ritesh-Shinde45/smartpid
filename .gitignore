@@ -16,7 +16,6 @@ __pycache__/
 .venv/
 venv/
 env/
-README.md
 # OS generated files
 Thumbs.db
 Desktop.ini
